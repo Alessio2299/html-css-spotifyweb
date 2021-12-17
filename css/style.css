@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: rgb(163, 163, 163);
 }
 .flex{
   display: flex;
@@ -13,25 +14,34 @@
 .container{
   width: 100vw;
   height: 100vh;
-  border: 1px solid rebeccapurple;
+}
+.content{
+  width: 100%;
+  height: calc(100% - 100px);
+}
+.column{
+  flex-direction: column;
+}
+.width{
+  width: 85%;
+}
+.margin{
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
 }
  /* End Common Command */
 
   /* Start Aside */
 aside{
   width: 15%;
-  min-height: 300px;
+  height: calc(100vh - 100px);
   background-color: #000;
-
-}
-.logo,
-.menù{
-  margin: auto;
+  justify-content: flex-start;
 }
 .logo{
-  width: 85%;
   padding: 10px 0;
-  
 }
 .logo img{
   width: 70%;
@@ -39,16 +49,58 @@ aside{
 .logo>.small{
   display: none;
 }
-.menù{
-  width: 85%;
-  height: 420px;
-  background-color: darkgreen;
-  overflow-y: scroll;
+.name-playlist{
+  overflow-y: scroll;    
+  min-height: 80px;
 }
 .profile{
-  width: 100%;
-  height: 100px;
-  background-color: darkgoldenrod;
+  height: 80px;
+  margin-top: auto;
+}
+.menù li{
+  list-style: none;
+  padding: 5px 0;
+}
+.menù a,
+.playlist a{
+  padding-left: 5px;
+}
+.playlist i {
+  font-size: 40px;
+  padding: 10px 0;
+}
+.playlist a{
+  line-height: 40px;
+  vertical-align: text-bottom;
+}
+#here i,
+#here a,
+.profile .name,{
+  color: #fff;
+}
+.fa-user-circle{
+  font-size: 30px;
+}
+h4{
+  color: #fff;
+  margin-top: 10px;
+}
+.name-playlist li{
+  margin-top: 8px;
+}
+hr{
+  margin: 10px 0;
+}
+.profile i{
+  margin-right: 5px;
+}
+.profile .name{
+  color: #fff;
+  line-height: 30px;
+  vertical-align: text-bottom;
+}
+.fa-arrow-alt-circle-down, .install{
+  font-size: 13px;
 }
   /* End Aside */
 
@@ -67,7 +119,7 @@ nav{
 }
 
 main{
-  height: 600px;
+  height: 100%;
   width: 85%;
   overflow-y: scroll;
 }
@@ -81,6 +133,8 @@ main{
 footer{
   width: 100%;
   height: 100px;
+  min-height: 100px;
+  z-index: 9999;
   background-color: black;
   color: #fff;
 }
