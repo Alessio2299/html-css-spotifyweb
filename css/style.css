@@ -1,5 +1,5 @@
  /* Common Command */
-*{
+ *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,7 +17,7 @@ aside{
   width: 15%;
   min-height: 300px;
   background-color: #000;
-  position: relative;
+
 }
 .logo,
 .menù{
@@ -41,13 +41,9 @@ aside{
   overflow-y: scroll;
 }
 .profile{
-  width: 15%;
-  min-height: 100px;
+  width: 100%;
+  height: 100%;
   background-color: darkgoldenrod;
-  position: fixed;
-  bottom: 0;
-  margin-bottom: 100px;
-
 }
   /* End Aside */
 
@@ -82,9 +78,6 @@ footer{
   height: 100px;
   background-color: black;
   color: #fff;
-  position: fixed;
-  bottom: 0;
-  left: 0;
 }
   /* End Footer */
 
@@ -108,24 +101,21 @@ footer{
     main{
       width: 90%;
     }
-    .profile{
-      width: 10%;
-    }
   }
   @media screen and (min-width: 576px) and (max-width: 767px){
     aside{
       width: 40%;
     }
-    .profile{
-      width: 32%;
+    main{
+      width: 60%;
     }
   }
   @media screen and (min-width: 767px) and (max-width: 991px){
     aside{
       width: 20%;
     }
-    .profile{
-      width: 19%;
+    main{
+      width: 80%;
     }
   }
   /* End MediaQuery */
