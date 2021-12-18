@@ -14,6 +14,7 @@
 .container{
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 .content{
   width: 100%;
@@ -170,10 +171,38 @@ main{
   background-color: rgb(20, 25, 34);
 }
 .content-main{
-  width: 100%;
+  width: 95%;
   padding-top: 80px;
+  column-gap: 20px
 }
-
+.cover{
+  margin: 20px 0;
+  align-items: center;
+  width: 150px;
+  justify-items: center;
+  margin-right: 10px;
+}
+.cover img{
+  width: 150px;
+}
+.cover h5{
+  margin: 20px 0 5px 0;
+  font-size: 15px;
+  color: #fff;
+}
+.cover h5,
+.cover span{
+  text-align: center;
+}
+.cover span{
+  font-size: 10px;
+}
+.content-main p{
+  margin: 10px 0;
+}
+.circle img{
+  border-radius: 50%;
+}
   /* End Main */
 
   /* Start Footer */
@@ -234,6 +263,10 @@ footer{
     .user{
       margin-top: 10px;
     }
+    .cover,
+    .cover img{
+      width: 200px;
+    }
   }
   @media screen and (min-width: 576px) and (max-width: 767px){
     aside{
@@ -254,6 +287,10 @@ footer{
     main,
     header{
       width: 75%;
+    }
+    .cover,
+    .cover img{
+      width: 120px;
     }
   }
   /* End MediaQuery */
