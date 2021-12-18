@@ -56,12 +56,13 @@ aside{
 .profile{
   height: 80px;
   margin-top: auto;
+  margin-bottom: 5px;
 }
-.menù li{
+.menu li{
   list-style: none;
   padding: 5px 0;
 }
-.menù a,
+.menu a,
 .playlist a{
   padding-left: 5px;
 }
@@ -73,9 +74,9 @@ aside{
   line-height: 40px;
   vertical-align: text-bottom;
 }
-#here i,
-#here a,
-.profile .name,{
+#here>i,
+#here>a,
+.profile .name{
   color: #fff;
 }
 .fa-user-circle{
@@ -95,7 +96,6 @@ hr{
   margin-right: 5px;
 }
 .profile .name{
-  color: #fff;
   line-height: 30px;
   vertical-align: text-bottom;
 }
@@ -106,22 +106,37 @@ hr{
 
   /* Start Main */
 header{
-  width: 100%;
+  width: 85%;
   height: 80px;
-  background-color: rgba(210, 105, 30, 0.61);
+  background-color: rgba(8, 10, 18, 0.788);
   position: fixed;
+}
+header .btn{
+  line-height: 80px;
+  vertical-align: middle;
+  text-align: end;
+  display: block;
+  margin-right: 10px;
+}
+.btn a{
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 10px 25px;
+  font-size: 10px;
+  color: #fff;
 }
 nav{
   width: 100%;
   height: 50px;
-  background-color: rgb(41, 33, 33);
   color: #fff;
+  background-color: rgb(20, 25, 34);
 }
 
 main{
   height: 100%;
   width: 85%;
   overflow-y: scroll;
+  background-color: rgb(20, 25, 34);
 }
 .content-main{
   width: 100%;
@@ -146,8 +161,7 @@ footer{
       width: 10%;
     }
     .logo{
-      justify-content: center;
-      align-content: flex-start;
+      justify-self: center;
       padding-top: 5px;
     }
     .logo>.normal{
@@ -155,26 +169,57 @@ footer{
     }
     .logo>.small{
       display: block;
-      text-align:center;
+      margin: auto;
+      width: 30px;
     }
-    main{
+    main,
+    header{
       width: 90%;
+    }
+    .menu,
+    .playlist,
+    .name-playlist,
+    .profile{
+      text-align: center;
+    }
+    .menu li>a,
+    .playlist,
+    .name-playlist,
+    .profile span,
+    hr{
+      display: none;
+    }
+    .profile i{
+      margin: 10px auto;
+      display: block;
+    }
+    .profile{
+      height: 70px;
+    }
+    .menu i{
+      font-size: 30px;
+ 
     }
   }
   @media screen and (min-width: 576px) and (max-width: 767px){
     aside{
       width: 40%;
     }
+    .logo>.normal{
+      width: 50%;
+    }
+    header,
     main{
       width: 60%;
     }
   }
   @media screen and (min-width: 767px) and (max-width: 991px){
     aside{
-      width: 20%;
+      width: 25%;
     }
-    main{
-      width: 80%;
+    main,
+    header{
+      width: 75%;
     }
   }
   /* End MediaQuery */
