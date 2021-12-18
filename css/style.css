@@ -56,7 +56,14 @@ aside{
 .profile{
   height: 80px;
   margin-top: auto;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+}
+.menu img{
+  width: 20px;
+}
+.menu a,
+.menu img{
+  vertical-align: middle;
 }
 .menu li{
   padding: 5px 0;
@@ -78,14 +85,15 @@ li {
 }
 #here>i,
 #here>a,
-.profile .name{
+.profile .name,
+h2,
+h4{
   color: #fff;
 }
 .fa-user-circle{
   font-size: 30px;
 }
 h4{
-  color: #fff;
   margin-top: 10px;
 }
 .name-playlist li{
@@ -94,16 +102,27 @@ h4{
 hr{
   margin: 10px 0;
 }
-.profile i{
-  margin-right: 5px;
+.download img{
+  width: 20px;
+  vertical-align: middle;
 }
-.profile .name{
-  line-height: 30px;
-  vertical-align: text-bottom;
+.profile span{
+  margin-left: 5px;
 }
-.fa-arrow-alt-circle-down, .install{
-  font-size: 13px;
+.install{
+  font-size: 10px;
 }
+.download{
+  margin-top: 10px;
+}
+.user img{
+  background-color: gray;
+  border-radius: 50%;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+}
+
   /* End Aside */
 
   /* Start Main */
@@ -154,6 +173,7 @@ main{
   width: 100%;
   padding-top: 80px;
 }
+
   /* End Main */
 
   /* Start Footer */
@@ -201,16 +221,18 @@ footer{
     hr{
       display: none;
     }
-    .profile i{
-      margin: 10px auto;
-      display: block;
+    .user img{
+      width: 30px;
+      height: 30px;
     }
     .profile{
       height: 70px;
     }
-    .menu i{
-      font-size: 30px;
- 
+    .menu img{
+      width: 30px;
+    }
+    .user{
+      margin-top: 10px;
     }
   }
   @media screen and (min-width: 576px) and (max-width: 767px){
