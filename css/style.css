@@ -121,7 +121,6 @@ h4{
   position: absolute;
   left: -7%;
   top: 0;
-  transform: translateX(-50%);
 }
 .fa-user-circle{
   font-size: 30px;
