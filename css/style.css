@@ -46,6 +46,9 @@ a {
 .active a{
   position: relative;
 }
+.circle{
+  border-radius: 50%;
+}
  /* End Common Command */
 
   /* Start Aside */
@@ -132,7 +135,6 @@ hr{
 }
 .user img{
   background-color: gray;
-  border-radius: 50%;
   vertical-align: middle;
   width: 30px;
   height: 30px;
@@ -217,12 +219,87 @@ main{
 
   /* Start Footer */
 footer{
-  width: 100%;
+  width: 100vw;
   height: 100px;
-  min-height: 100px;
   z-index: 9999;
-  background-color: black;
+  background-color: rgb(40, 40, 40);
   color: #fff;
+  justify-content: space-between;
+}
+.img-album img{
+  width: 50px;
+}
+.img-album{
+  margin: 0 10px;
+}
+.album {
+  align-items: center;
+}
+.name-album{
+  margin-right: 40px;
+}
+.name-album span{
+  font-size: 10px;
+}
+.name-album span:first-child,
+.play-pause i {
+  color: #fff;
+}
+.fa-folder{
+  margin-left: 10px;
+}
+.play-pause a{
+  margin: 0px 20px 0 20px;
+  font-size: 20px;
+  align-self: center;
+}
+.play-pause{
+  justify-content: center;
+}
+.fa-play-circle{
+  font-size: 30px;
+}
+.command{
+  justify-content: center;
+}
+.bar{
+  height: 5px;
+  background-color: rgb(91, 90, 90);
+  border-radius: 20px;
+}
+.minute{
+  width: 500px;
+}
+.volume{
+  width: 200px;
+  margin-right: 20px;
+}
+.other-command{
+  align-items: center;
+}
+.song-minute span{
+  margin: 0 20px;
+}
+.song-minute{
+  align-items: center;
+}
+.other-command i{
+  margin-right: 20px;
+}
+.effective{
+  background-color: rgb(191, 190, 190);
+  width: 20%;
+  position: relative;
+}
+.effective-bar{
+  background-color: #000;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateY(-30%);
+  display: none;
 }
   /* End Footer */
 
