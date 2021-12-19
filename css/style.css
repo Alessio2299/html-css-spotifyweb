@@ -31,6 +31,8 @@
 }
 a {
   text-decoration: none;
+}
+.content-main nav ul a{
   padding-bottom: 5px;
 }
 .active a:after{
@@ -107,6 +109,19 @@ li {
 h2,
 h4{
   color: #fff;
+}
+#here{
+  position: relative;
+}
+#here:after{
+  content: "";
+  height: 100%;
+  width: 2px;
+  background-color: limegreen;
+  position: absolute;
+  left: -7%;
+  top: 0;
+  transform: translateX(-50%);
 }
 .fa-user-circle{
   font-size: 30px;
@@ -234,6 +249,7 @@ footer{
 }
 .album {
   align-items: center;
+  width: 15%;
 }
 .name-album{
   margin-right: 40px;
@@ -255,12 +271,15 @@ footer{
 }
 .play-pause{
   justify-content: center;
+  width: 50%;
+  align-self: center;
 }
 .fa-play-circle{
   font-size: 30px;
 }
 .command{
   justify-content: center;
+  width: 40%;
 }
 .bar{
   height: 5px;
@@ -276,12 +295,16 @@ footer{
 }
 .other-command{
   align-items: center;
+  width: 30%;
+  justify-content: flex-end;
 }
 .song-minute span{
   margin: 0 20px;
 }
 .song-minute{
   align-items: center;
+  justify-content: center;
+  margin-top: 15px;
 }
 .other-command i{
   margin-right: 20px;
@@ -292,7 +315,7 @@ footer{
   position: relative;
 }
 .effective-bar{
-  background-color: #000;
+  background-color: rgb(222, 222, 222);
   width: 15px;
   height: 15px;
   position: absolute;
@@ -300,6 +323,12 @@ footer{
   top: 0;
   transform: translateY(-30%);
   display: none;
+}
+.bar:hover .effective-bar{
+  display: block;
+}
+.bar:hover .effective{
+  background-color: rgb(179, 188, 77);
 }
   /* End Footer */
 
@@ -368,7 +397,8 @@ footer{
     }
   }
   @media screen and (min-width: 767px) and (max-width: 991px){
-    aside{
+    aside,
+    .album{
       width: 25%;
     }
     main,
