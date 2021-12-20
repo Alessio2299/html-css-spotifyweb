@@ -54,6 +54,13 @@ a {
 .relative{
   position: relative;
 }
+span,
+h5{
+  cursor: pointer;
+}
+i:hover{
+  color: #fff;
+}
  /* End Common Command */
 
   /* Start Aside */
@@ -94,17 +101,14 @@ aside{
 li {
   list-style: none;
 }
-.menu a,
-.playlist a{
-  padding-left: 5px;
-}
 .playlist i {
   font-size: 40px;
-  padding: 10px 0;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 .playlist a{
   line-height: 40px;
-  vertical-align: text-bottom;
+  font-size: 15px;
 }
 #here>i,
 #here>a,
@@ -112,9 +116,6 @@ li {
 h2,
 h4{
   color: #fff;
-}
-#here{
-  position: relative;
 }
 #here:after{
   content: "";
@@ -129,12 +130,12 @@ h4{
   font-size: 30px;
 }
 h4{
-  margin-top: 10px;
+  margin: 10px 0 10px 0;
 }
 .name-playlist li{
   margin-top: 8px;
 }
-.name-playlist a:hover{
+a:hover{
   color: #fff;
 }
 hr{
@@ -160,6 +161,9 @@ hr{
   height: 30px;
 }
 
+.playlist a:hover{
+  color: #fff;
+}
   /* End Aside */
 
   /* Start Main */
@@ -169,13 +173,12 @@ header{
   background-color: rgba(8, 10, 18, 0.788);
   position: fixed;
   z-index: 9999;
+  justify-content: flex-end;
+  align-items: center;
 }
 header .btn{
-  line-height: 80px;
-  vertical-align: middle;
-  text-align: end;
-  display: block;
-  margin-right: 10px;
+  display: inline-block;
+  margin-right: 40px;
 }
 .btn a{
   border: 2px solid #fff;
@@ -183,6 +186,10 @@ header .btn{
   padding: 10px 25px;
   font-size: 10px;
   color: #fff;
+  transition: all 2s;
+}
+.btn:hover{
+  transform: scale(1.2);
 }
 nav{
   width: 100%;
@@ -196,7 +203,6 @@ nav ul{
 nav ul li{
   margin: 10px 20px 20px 0;
 }
-
 main{
   height: 100%;
   width: calc(100% - 230px);
@@ -298,6 +304,9 @@ footer{
 }
 .fa-play-circle{
   font-size: 30px;
+}
+.fa-play-circle:hover{
+transform: scale(1.2);
 }
 .command{
   justify-content: center;
