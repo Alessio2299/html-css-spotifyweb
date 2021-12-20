@@ -40,13 +40,11 @@
           </div>
           <div class="name-playlist width margin">
             <ul>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
             </ul>
           </div>
           <div class="profile width margin">
@@ -56,7 +54,7 @@
             </div>
             <hr>
             <div class="user">
-              <img src="./img/profile.svg" alt="Profile">
+              <img class="circle" src="./img/profile.svg" alt="Profile">
               <span class="name">John Doe</span>
             </div>
           </div>
@@ -80,59 +78,89 @@
             </nav>
             <h2>Recently played</h2>
             <div class="recently flex wrap">
-              <div class="cover flex column">
+              <div class="cover flex column relative">
                 <img src="./img/metal_lifting.jpg" alt="Mix Metal">
                 <h5>Heavy Metal</h5>
                 <span>Subtitle</span>
+                <div class="overlay">
+                  <a href="#"><i class="fas fa-play-circle"></i></a>
+                </div>
               </div>
-              <div class="cover flex column">
+              <div class="cover flex column relative">
                 <img src="./img/stranger.jpeg" alt="Stranger Things">
                 <h5>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h5>
                 <span>Kvle Dixon & Michael Stein</span>
+                <div class="overlay">
+                  <a href="#"><i class="fas fa-play-circle"></i></a>
+                </div>
               </div>
-              <div class="cover flex column">
+              <div class="cover flex column relative">
                 <img src="./img/aquietplace.jpeg" alt="A Quiet Place">
                 <h5>A quiet place</h5>
                 <span>Subtitle</span>
+                <div class="overlay">
+                  <a href="#"><i class="fas fa-play-circle"></i></a>
+                </div>
               </div>
-              <div class="cover flex column">
+              <div class="cover flex column relative">
                 <img src="./img/split.jpeg" alt="Split">
                 <h5>Split</h5>
                 <span>Subtitle</span>
+                <div class="overlay">
+                  <a href="#"><i class="fas fa-play-circle"></i></a>
+                </div>
               </div>
-              <div class="cover flex column">
+              <div class="cover flex column relative">
                 <img src="./img/cure.jpeg" alt="A Cure for Wellness">
                 <h5>A Cure for Wellness</h5>
                 <span>Subtitle</span>
+                <div class="overlay">
+                  <a href="#"><i class="fas fa-play-circle"></i></a>
+                </div>
               </div>
-              <div class="cover flex column">
+              <div class="cover flex column relative">
                 <img src="./img/sinister.jpeg" alt="Sinister">
                 <h5>Sinister</h5>
                 <span>Subtitle</span>
+                <div class="overlay">
+                  <a href="#"><i class="fas fa-play-circle"></i></a>
+                </div>
               </div>
             </div>
             <h2>Creato per John Doe</h2>
             <p>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti</p>
             <div class="create flex wrap">
-              <div class="cover flex column">
+              <div class="cover flex column relative">
                 <img src="./img/radar.jpeg" alt="Release Radar">
                 <h5>Release Radar</h5>
+                <div class="overlay">
+                  <a href="#"><i class="fas fa-play-circle"></i></a>
+                </div>
               </div>
-              <div class="cover flex column">
+              <div class="cover flex column relative">
                 <img src="./img/mixdaily.jpeg" alt="Mix Daily 1">
                 <h5>Daily Mix 1</h5>
+                <div class="overlay">
+                  <a href="#"><i class="fas fa-play-circle"></i></a>
+                </div>
               </div>
             </div>
             <h2>Artisti pi&ugrave; popolari</h2>
             <p>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti</p>
-            <div class="popular-artists flex wrap circle">
-              <div class="cover flex column">
+            <div class="popular-artists flex wrap">
+              <div class="cover flex column circle relative">
                 <img src="./img/youg.jpeg" alt="Youg">
                 <h5>Youg</h5>
+                <div class="overlay circle">
+                  <a href="#"><i class="fas fa-play-circle"></i></a>
+                </div>
               </div>
-              <div class="cover flex column circle">
+              <div class="cover flex column circle relative">
                 <img src="./img/einaudi.jpeg" alt="Einaudi">
                 <h5>Einaudi</h5>
+                <div class="overlay circle">
+                  <a href="#"><i class="fas fa-play-circle"></i></a>
+                </div>
               </div>
             </div>
           </div>
@@ -147,7 +175,7 @@
             <span>Sinister</span>
             <span>Brano Nome</span>
           </div>
-          <div class="bnt-album">
+          <div class="btn-album flex">
             <i class="far fa-heart"></i>
             <i class="far fa-folder"></i>
           </div>
