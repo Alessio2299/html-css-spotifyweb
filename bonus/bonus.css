@@ -30,15 +30,19 @@
   .play-pausa{
     width: 65%;
   }
+  header{
+    justify-content: center;
+  }
 }
 #vertical-volume{
   position: relative;
 }
 .vertical-volume-bar{
   position: absolute;
-  top: -110px;
+  bottom:  100%;
   width: 20px;
   height: 100px;
+  display: none;
 }
 .vertical-bar{
   width: 5px;
@@ -56,6 +60,6 @@
   background-color: rgb(222, 222, 222);
   border-radius: 0 0 4px 4px;
 }
-#vertical-volume i:hover .vertical-volume-bar{
+#vertical-volume:hover .vertical-volume-bar{
   display: block;
 }
