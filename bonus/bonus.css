@@ -72,3 +72,22 @@
   background-color: rgb(222, 222, 222);
   border-radius: 0 0 4px 4px;
 }
+.recently{
+  height: 280px;
+  overflow: hidden;
+}
+.circle-volume{
+  background-color: rgb(222, 222, 222);
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  transform: translateX(-30%);
+  bottom: 80%;
+  display: none;
+}
+.vertical-bar:hover .circle-volume{
+  display: block;
+}
+.vertical-bar:hover .effective-volume{
+  background-color: rgb(179, 188, 77);
+}
