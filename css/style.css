@@ -39,7 +39,7 @@ a {
   content: "";
   height: 2px;
   width: 50%;
-  background-color: limegreen;
+  background-color: rgb(175, 255, 50);
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -121,7 +121,7 @@ h4{
   content: "";
   height: 100%;
   width: 2px;
-  background-color: limegreen;
+  background-color: rgb(175, 255, 50);
   position: absolute;
   left: -7%;
   top: 0;
@@ -360,6 +360,9 @@ transform: scale(1.2);
 }
 .bar:hover .effective{
   background-color: rgb(179, 188, 77);
+}
+.song-name:hover{
+  text-decoration: underline;
 }
   /* End Footer */
 
